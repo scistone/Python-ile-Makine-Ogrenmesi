@@ -1,5 +1,5 @@
 # Python-ile-Makine-Ogrenmesi
-Python ile Makine Öğrenmesi Türkçe Döküman
+Python ile Makine Öğrenmesi Türkçe Döküman. Sadi Evren Şeker'in Python ile Makine Öğrenmesi dersinden alıntı yapılmıştır. Kendi öğrenme sürecimde aldığım notlardır.
 
 # Kurulumlar
 
@@ -10,8 +10,6 @@ Python ile Makine Öğrenmesi Türkçe Döküman
 1. Pandas
 2. Numpy
 3. Matplotlib
-
-
 
 
 # Metodoloji : CRISP-DM
@@ -97,7 +95,39 @@ imputer = imputer.fit(age)
 age =  imputer.transform(age)
 ```
 
+## Veri 
 
 
+Aslında veri iki ana grupta incelenebilir. Kategorik veriler ve sayısal veriler. Örneğin; cinsiyet verisi, eğitim durumu, plaka numaraları, ülke verileri gibi veriler kategorik verilerdir. Bu gibi verilerde sayısal, büyüklük küçüklük ilişkisi kurulamayan verilerdir. 
 
 
+Aslında bizim amacımız kategorik olan verileri de sayısal bir değere dönüştürüp(encoding) bu şekilde makine öğrenmesi algoritmasını çalıştırabilmektir.
+
+
+- Veri
+    - Kategorik Veriler
+        - Nominal
+        - Ordinal
+    - Sayısal Veriler
+        - Oransal (Ratio)
+        - Aralık (Interval)
+
+### Kategorik Veriler 
+
+Ordinal veriler sıraya sokulabilen büyüktür küçüktür ilişkisi kurulabilen verilerdir. 
+
+Nominal veriler ise sıralama ve büyüktür küçüktür ilişkisi kurulamayan verilerdir.
+
+### Sayısal Veriler
+
+Oransal(Ratio) birbirine göre orantılanabilen, çarpılıp bölünebilen değerlerdir.
+
+Aralık ise birbiri ile çarpılıp bölünemeyen değerlerdir. Belli bir aralığı belli eden sayısal değerlerdir.
+
+### Örnek
+
+Örneğin elimizde ülke, boy, kilo, yaş ve cinsiyet verileri olan bir veri setimiz olsun. Problemimiz de ülke, boy, kilo ve yaş verileri ile cinsiyet bulmak olsun. Burada ülke değeri bir kategorik veridir ve burada bu veriyi kullanmak için sayısal bir değere çevirmeliyiz ki makine öğrenmesi algoritmamızı çalıştırabilelim.
+
+```
+Bu bölümle ilgili Python kodu kategorik.py dosyasında bulunmaktadır.
+```

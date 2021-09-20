@@ -24,9 +24,9 @@ imputer = SimpleImputer(missing_values=np.nan,strategy='mean')
 age = veriler.iloc[:,3:4].values 
 
 """
-iloc ana olarak iki adet parametre almaktadır. 
-birincisi hangi satırdan hangi satıra kadar veriyi okuyacağı
-ikincisi  hangi sütundan hangi sütuna kadar veriyi okuyacağı
+iloc iki adet parametre almaktadır. 
+birincisi: hangi satırdan hangi satıra kadar veriyi okuyacağı
+ikincisi:  hangi sütundan hangi sütuna kadar veriyi okuyacağı
 """
 
 # age olarak aldığımız yaş sütununu imputer'a gönderip ilk belirlediğimiz stratejiye göre öğrenme işlemini gerçekleştiriyoruz.
