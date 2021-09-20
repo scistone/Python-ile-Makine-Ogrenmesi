@@ -155,9 +155,12 @@ Aslında burada amacımız veriler ile en iyi doğruyu yaratabilmektir.Yani bu d
 
 ### Basit Doğrusal Regresyon(Simple Linear Regression)
 
-İki boyutlu bir uzayda doğruyu ifade etmek istersek matematiksel olarak:
+İki boyutlu bir uzayda basit bir doğruyu ifade etmek istersek matematiksel olarak:
 
-y = ax+b olarak ifade edebiliriz.
+y = ax+b + e olarak ifade edebiliriz.
 
-Burada y değişkeni bağımlı değişken, x değeri bağımsız değişkendir. a değeri katsayı(coefficient) veya doğrunun eğimidir. b değeri ise sabit değerimizdir.
+Burada y değişkeni bağımlı değişken, x değeri bağımsız değişkendir. a değeri katsayı(coefficient) veya doğrunun eğimidir. b değeri ise sabit değerimizdir. e değeri hata miktarıdır.
 
+### Çoklu Doğrusal Regresyon(Multiple Linear Regression)
+
+Çoklu doğrusal regresyon, bağımlı değişkenin birden fazla olduğu durumlarda kullanılmaktadır.
