@@ -26,7 +26,7 @@ Sırasıyla CRISP-DM hayat döngüsü:
     - İş Anlayışı-İşi anlama
 5. Dağıtım
 
-## Veri Ön İşleme(Data Preprocessing)
+# Veri Ön İşleme(Data Preprocessing)
 
 ### Verilerin import edilmesi
 
@@ -131,3 +131,33 @@ Aralık ise birbiri ile çarpılıp bölünemeyen değerlerdir. Belli bir aralı
 ```
 Bu bölümle ilgili Python kodları veri-on-isleme klasöründe bulunmaktadır.
 ```
+
+# Tahmin(Prediction)
+
+Veri ön işleme kısmında veri başlığımız altında sayısal ve kategorik verilere değinmiştik. Aslında bu ayrım bize problem tiplerini ayırmamıza da yardım ediyor. Kategorik veriler üzerinde herhangi bir tahmin yapıldığında sınıflandırma(classification) problemi, sayısal veriler üzerinde tahmin yapıldığında tahmin(prediction) problemi oluyor.
+
+Örnek olarak; 
+- Bir kişinin yaşını, gelir düzeyini, dolar kurunu gibi sayısal verileri tahmin etmek istiyor isek bunu tahmin(prediction) olarak nitelendiriyoruz. 
+- Bir kişinin eğitim düzeyini, cinsiyetini gibi kategorik verileri tahmin etmeye çalışıyorsak sınıflandırma olarak nitelendiriyoruz.
+
+### Tahmin(Prediction) ve Öngörü(Forecasting)
+
+Tahmin daha genel kapsayıcı bir kavramdır, öngörü ise daha özel bir kavramdır. Öngörü geleceğin tahmin edilmesine denmektedir. Yani öngörü bizim örneklem uzayımızın dışındaki olayları tahmin edilmesine denmektedir.
+
+Tahminde geçmiş ya da gelecek ile bağıntı kurması önemli değildir. Eksik bir verinin tahmini de tahmin olarak nitelendirilir.
+
+## Doğrusal Regresyon(Linear Regression)
+
+Aslında burada amacımız veriler ile en iyi doğruyu yaratabilmektir.Yani bu doğruya en yakın geçen noktaları bularak bir doğru modeli inşaa etmektir. Aynı zamanda amacımız bu doğruda hata miktarımızı minimize etmektir. 
+
+Örneğin aylara göre satış miktarı olan bir veride bir sonraki ay yapılacak satışları bulmak için doğrusal regresyon kullanabiliriz. 
+
+
+### Basit Doğrusal Regresyon(Simple Linear Regression)
+
+İki boyutlu bir uzayda doğruyu ifade etmek istersek matematiksel olarak:
+
+y = ax+b olarak ifade edebiliriz.
+
+Burada y değişkeni bağımlı değişken, x değeri bağımsız değişkendir. a değeri katsayı(coefficient) veya doğrunun eğimidir. b değeri ise sabit değerimizdir.
+
