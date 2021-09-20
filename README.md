@@ -129,5 +129,5 @@ Aralık ise birbiri ile çarpılıp bölünemeyen değerlerdir. Belli bir aralı
 Örneğin elimizde ülke, boy, kilo, yaş ve cinsiyet verileri olan bir veri setimiz olsun. Problemimiz de ülke, boy, kilo ve yaş verileri ile cinsiyet bulmak olsun. Burada ülke değeri bir kategorik veridir ve burada bu veriyi kullanmak için sayısal bir değere çevirmeliyiz ki makine öğrenmesi algoritmamızı çalıştırabilelim.
 
 ```
-Bu bölümle ilgili Python kodu kategorik.py dosyasında bulunmaktadır.
+Bu bölümle ilgili Python kodları veri-on-isleme klasöründe bulunmaktadır.
 ```
