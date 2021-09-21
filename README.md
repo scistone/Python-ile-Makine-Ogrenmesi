@@ -164,3 +164,19 @@ Burada y değişkeni bağımlı değişken, x değeri bağımsız değişkendir.
 ### Çoklu Doğrusal Regresyon(Multiple Linear Regression)
 
 Çoklu doğrusal regresyon, bağımlı değişkenin birden fazla olduğu durumlarda kullanılmaktadır.
+
+### İstatistik Değerlerini Bulma
+
+Kuracağımız makine öğrenmesi modeline değişkenlerin etkisini bulmak için aşağıdaki kodu kullanabiliriz.
+
+```python
+import statsmodels.api as sm
+
+new_framelist = dataset.iloc[:,[0,1,2,3,4,5]].values
+new_framelist = np.array(new_framelist,dtype=float)
+
+
+model = sm.OLS(height,new_framelist).fit()
+summary = model.summary()
+```
+

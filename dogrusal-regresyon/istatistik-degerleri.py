@@ -75,3 +75,19 @@ linear_regressor2.fit(x_train,y_train)
 
 y_predict2 = linear_regressor2.predict(x_test)
 
+
+### İSTATİSTİK DEĞERLERİ - BACKWARD ELIMINATION
+
+
+import statsmodels.api as sm
+
+# Sabit değer ekleme
+new_frame = np.append(arr=np.ones((22,1)).astype(int),values=dataset,axis=1)
+
+new_framelist = dataset.iloc[:,[0,1,2,3,4,5]].values
+new_framelist = np.array(new_framelist,dtype=float)
+model = sm.OLS(height,new_framelist).fit()
+
+print(model.summary())
+
+
