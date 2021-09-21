@@ -180,3 +180,9 @@ model = sm.OLS(height,new_framelist).fit()
 summary = model.summary()
 ```
 
+### Polinomal Regresyon(Polynomial Regression)
+
+Doğrusal Regresyonda bir doğrudan bahsediyorduk fakat polinomal regresyonda farklı kırılımlar elde edebiliyoruz. Örneğin : y = x^2 bir polinomal regresyondur. Yani polinomal regresyonda matematiksel olarak dönüm noktaları bulunmaktadır ve denklemlerin derecesinden bahsedebiliriz.
+
+Örneğin: Eğitim seviyesi ve maaşın bulunduğu bir verisetinde eğitim seviyesine bağlı olarak maaşın artması bir polinomal regresyon örneğidir. Bu verisetinde polinomal regresyon kullanmak makine öğrenmesi için daha doğru sonuçlar elde etmemizi sağlayacaktır.
+
